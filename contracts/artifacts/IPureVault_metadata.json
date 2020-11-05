@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.7.0+commit.9e61f92b"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dealer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "userdata",
+						"type": "bytes"
+					}
+				],
+				"name": "startFlashLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/PureFlashLoanDemoFlat.sol": "IPureVault"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/PureFlashLoanDemoFlat.sol": {
+			"keccak256": "0xebc5640ddf03091336c936d295e5822c2e2b5d42cbec941712fbbc5611dc4a49",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://96ec6afcdf93378d012a977ff664ce563ab1de8cebb43348e8e965c1702d3a1a",
+				"dweb:/ipfs/Qmc4bjvY4ZZeKi5RfJpZVg6RUCP8uVyD7QJzVr15NxF88e"
+			]
+		}
+	},
+	"version": 1
+}

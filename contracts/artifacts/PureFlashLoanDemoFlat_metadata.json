@@ -72,10 +72,7 @@
 			"kind": "user",
 			"methods": {
 				"OnFlashLoan(address,uint256,uint256,bytes)": {
-					"notice": "保险柜合约回调接口，在IPureFlash中定义 token: 借款的token amount: 借款的数量 rAmount: 借款的数量+手续费 data:  透传的开发者自定义数据"
-				},
-				"startFlashLoan(address,uint256)": {
-					"notice": "发起闪电贷调用接口 token: 要借的token  amount:借入的数量 备注：也可以直接调用保险柜合约并设置借贷处理合约dealer，发起借贷"
+					"notice": "callback by PFL Valt Contract  token: token address amount: tokens PFL Valt sended to your contract rAmount: tokens with fee,need transfer back to PFL Vault,otherwise this transaction will revert. data:  developer custom data when startthis transaction"
 				}
 			},
 			"version": 1
@@ -83,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"localhost/contracts/PureFlashLoanDemoCN.sol": "PureFlashLoanDemo"
+			"localhost/contracts/PureFlashLoanDemoFlat.sol": "PureFlashLoanDemoFlat"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -97,28 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"localhost/contracts/@interface/IERC20.sol": {
-			"keccak256": "0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76",
+		"localhost/contracts/PureFlashLoanDemoFlat.sol": {
+			"keccak256": "0xebc5640ddf03091336c936d295e5822c2e2b5d42cbec941712fbbc5611dc4a49",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b",
-				"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU"
-			]
-		},
-		"localhost/contracts/@interface/IPureFlash.sol": {
-			"keccak256": "0x254af26c4d5d83c88c04a9eda04e6dd28a867a16c82f1b7f48be35c2ee22b90b",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://0870ad6460db400d3b97557a45835d64abae7b9e6a57ff6b336bda1ae4e4868b",
-				"dweb:/ipfs/QmS9ia9iNUj7TkQx6KBaTSh8oMTQN7eGg9MDn11naAzey3"
-			]
-		},
-		"localhost/contracts/PureFlashLoanDemoCN.sol": {
-			"keccak256": "0xf991a63643d3d0c34fc2958d1911b86058279109a2059727c31cf1c866a697fa",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://2286f8e901529c8b4b04d08d765d288074076840ac763252e3e8b5166531b4e0",
-				"dweb:/ipfs/QmbfNZTXNWFeLnJgYGZpbj1ExqnsN6i2ZFP3od3uXsQhJN"
+				"bzz-raw://96ec6afcdf93378d012a977ff664ce563ab1de8cebb43348e8e965c1702d3a1a",
+				"dweb:/ipfs/Qmc4bjvY4ZZeKi5RfJpZVg6RUCP8uVyD7QJzVr15NxF88e"
 			]
 		}
 	},
